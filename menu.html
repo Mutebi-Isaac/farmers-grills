@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Framers Grill — Menu</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fffefc;
+      color: #333;
+    }
+    header {
+      background: #b33a2f;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      border-bottom: 2px solid #b33a2f;
+      padding-bottom: 0.5rem;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin: 1rem 0;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px dashed #ccc;
+    }
+    .price {
+      float: right;
+      font-weight: bold;
+      color: #b33a2f;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Framers Grill</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+    </nav>
+  </header>
+
+  <section class="section">
+    <h2>Grill Mains</h2>
+    <ul>
+      <li>Charred Ribeye <span class="price">UGX 45,000</span></li>
+      <li>Grilled Chicken Supreme <span class="price">UGX 28,000</span></li>
+      <li>Grilled Salmon <span class="price">UGX 35,000</span></li>
+    </ul>
+
+    <h2>Vegetarian</h2>
+    <ul>
+      <li>Smoky Veg Bowl <span class="price">UGX 18,000</span></li>
+      <li>Grilled Halloumi <span class="price">UGX 16,000</span></li>
+    </ul>
+
+    <h2>Sides & Starters</h2>
+    <ul>
+      <li>Framers Wings <span class="price">UGX 12,000</span></li>
+      <li>Handcut Fries <span class="price">UGX 6,000</span></li>
+      <li>Green Salad <span class="price">UGX 5,000</span></li>
+    </ul>
+
+    <h2>Desserts & Drinks</h2>
+    <ul>
+      <li>Chocolate Brownie <span class="price">UGX 8,000</span></li>
+      <li>House Lemonade <span class="price">UGX 4,000</span></li>
+    </ul>
+  <section id="reservation" style="
+  background: url('images/logo.png') center center no-repeat;
+  background-size: 120px;
+  background-color: #fff8f2;
+  padding: 2rem;
+  text-align: center;
+  border-top: 2px solid #b33a2f;
+  margin-top: 2rem;
+">
+  <h2 style="color:#b33a2f;">Reserve a Table</h2>
+  <p>Fill in your details and we’ll confirm your booking shortly.</p>
+  <form action="https://formspree.io/f/xwpabknl" method="POST" style="max-width:500px;margin:auto;text-align:left;">
+    <label>Name<br/>
+      <input type="text" name="name" required style="width:100%;padding:0.5rem;margin-bottom:1rem;"/>
+    </label>
+    <label>Phone or Email<br/>
+      <input type="text" name="contact" required style="width:100%;padding:0.5rem;margin-bottom:1rem;"/>
+    </label>
+    <label>Number of Guests<br/>
+      <input type="number" name="guests" min="1" value="2" style="width:100%;padding:0.5rem;margin-bottom:1rem;"/>
+    </label>
+    <label>Date & Time<br/>
+      <input type="datetime-local" name="datetime" style="width:100%;padding:0.5rem;margin-bottom:1rem;"/>
+    </label>
+    <button type="submit" style="
+      background:#b33a2f;
+      color:white;
+      padding:0.6rem 1rem;
+      border:none;
+      border-radius:5px;
+      font-weight:bold;
+      cursor:pointer;
+    ">Submit Reservation</button>
+  </form>
+</section>
+
+  <footer>
+    <p>📍 Kiwatule, Kampala | ☎ +256 740136350</p>
+    <p>&copy; 2025 Framers Grill</p>
+  </footer>
+</body>
+</html>
